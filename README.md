@@ -1,4 +1,11 @@
 
+<style>
+.gist-data{
+    height:250px; // Any height
+    overflow-y: visible;
+}
+</style>
+
 # <span style="color:#A0522D">SoluBloc</span> <span style="color: #707070">v-1.0</span>
 > [color=#DEB887]<b><i>A coding pattern for building fast mobile apps with flutter at scale.</i></b>
 
@@ -32,53 +39,5 @@ The `Bloc` class which is implemented by all classes in this folder has a functi
 The general structure of code should be as desplayed below.
 
 
-```dart
-class CounterBloc extends Bloc {
-  int _count = 0;
-  
-  int get count => _count;
-  
-  set count(int value){
-      _count = value;
-      notifyChanges();
-  }
+{%gist mordeccai/23e8aea5ade68c17b6d76fe160db504b%}
 
-  void decrement() {
-    count -=1;
-  }
-
-  void increment() {
-    count +=1;
-  }
-
-  @override
-  void initState() {
-    super.initState();
-    // Code that gets called when the bloc is initialized
-  }
-  
-   @override
-  void dispose() {
-    super.dispose();
-    // Code that gets called when the bloc is disposed
-  }
-  
-  @override
-  void onPause() {
-    super.onPause();
-    // Code that gets called when the app is paused
-  }
-  
-  @override
-  void onResume() {
-    super.onPause();
-    // Code that gets called when the app is resumed from the background
-  }
-  
-  @override
-  void onInactive() {
-    super.onPause();
-    // Code that gets called when the app has been inactive for some time
-  }
-}
-```
