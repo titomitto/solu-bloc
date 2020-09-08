@@ -1,8 +1,8 @@
 import 'package:solu_bloc/tools/bloc_provider.dart';
+import 'package:solu_bloc/ui/screens/other_screen.dart';
 
 class CounterBloc extends Bloc {
   int _count = 0;
-
   int get count => _count;
 
   set count(int value) {
@@ -16,6 +16,10 @@ class CounterBloc extends Bloc {
 
   void increment() {
     count += 1;
+  }
+
+  void viewOtherPage() {
+    navigate(screen: OtherScreen());
   }
 
   @override

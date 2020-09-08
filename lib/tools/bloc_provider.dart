@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:solu_bloc/ui/dialogs/progress_dialog.dart';
-import 'package:solu_bloc/ui/widgets/screen.dart';
 
 part 'bloc.dart';
 
