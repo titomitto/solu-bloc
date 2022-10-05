@@ -7,7 +7,7 @@
 </style>
 
 # <span style="color:#A0522D">SoluBloc</span> <span style="color: #707070">v-1.0</span>
-> [color=#DEB887]<b><i>A coding pattern for building fast mobile apps with flutter at scale.</i></b>
+> [color=#DEB887]<b><i>A coding pattern for building mobile apps with flutter at scale.</i></b>
 
 
 
